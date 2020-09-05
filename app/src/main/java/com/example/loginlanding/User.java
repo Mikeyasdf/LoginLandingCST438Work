@@ -17,14 +17,14 @@ public class User {
         this.userID = userID;
     }
 
-//    public void User(String username, String password){
-//        this.username = username;
-//        this.password = password;
-//    }
-//
-//    public void User(){
-//
-//    }
+    public User(String username, String password){
+        this.username = username;
+        this.password = password;
+    }
+
+    public User(){
+
+    }
 
     public int getUserID() {
         return userID;

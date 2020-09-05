@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -90,5 +91,9 @@ public class MainActivity extends AppCompatActivity implements Listener {
             }
         }
 
+    }
+    public static Intent intentFactory(Context context, int id){
+        Intent intent = new Intent(context, MainActivity.class);
+        return intent;
     }
 }

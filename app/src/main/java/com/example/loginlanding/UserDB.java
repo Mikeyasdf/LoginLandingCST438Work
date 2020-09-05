@@ -10,6 +10,7 @@ import androidx.room.RoomDatabase;
 public abstract class UserDB extends RoomDatabase {
 
     private static UserDB instance;
+    public static final String USER_TABLE = "USERLOG_CLASS";
 
     public abstract UserDAO userDao();
 
